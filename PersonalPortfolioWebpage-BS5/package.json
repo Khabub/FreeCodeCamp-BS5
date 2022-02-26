@@ -1,0 +1,16 @@
+{
+  "name": "personalportfoliowebpage-bs5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "compile": "node-sass sass.scss style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "node-sass": "^7.0.1"
+  }
+}
