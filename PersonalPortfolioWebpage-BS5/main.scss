@@ -1,8 +1,12 @@
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$h1-font-size:                $font-size-base * 5.5;
+
 @import "./node_modules/bootstrap/scss/bootstrap";
 
 h1 {
     font: {
-        size: 3rem;
-        color: red;
+             
+        weight: bold;
     }
+    color: rgb(0, 255, 64);
 }
