@@ -11141,7 +11141,7 @@ textarea.form-control-lg {
   transition: all 0.5s ease-out;
 }
 
-.row > a:hover {
+.row > .button-showall a:hover {
   background-color: red !important;
   transition: all 1.5s ease-out;
 }
@@ -11153,11 +11153,6 @@ textarea.form-control-lg {
   align-items: center;
   text-align: center;
   background-color: #6610f2;
-}
-
-.list-inline li:nth-child(n) {
-  margin-right: 1.5em;
-  font-weight: bold;
 }
 
 .list-inline > a li:hover {

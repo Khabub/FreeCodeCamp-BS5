@@ -34,7 +34,7 @@ $button-show-all-background:        rgb(255, 0, 0);
     transition: all 0.5s ease-out;
 }
 
-.row > a:hover {
+.row > .button-showall a:hover {
     background-color: $button-show-all-background !important;
     transition: all 1.5s ease-out;
 }
@@ -48,10 +48,10 @@ $button-show-all-background:        rgb(255, 0, 0);
     background-color: $indigo-500;
 }
 
-.list-inline li:nth-child(n) {
-    margin-right: 1.5em;
-    font-weight: bold;
-}
+// .list-inline li:nth-child(n) {
+//     margin-right: 1.5em;
+//     font-weight: bold;
+// }
 
 .list-inline > a li:hover { 
     transition-duration: 0.5s;
