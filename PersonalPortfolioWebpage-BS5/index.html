@@ -25,25 +25,27 @@
   </div>
 
   <!--Home section--> 
-  <section class="home-section">
+  <section class="home-section" id="about">
     <h1 class="text-white display-2 fw-bolder">Hey I am Mimic</h1>
     <h2 class="text-danger fst-italic fw-bolder mt-5">a web developer</h2>
   </section>
 
   <!--Cards-->
-  <section class="cards bg-primary">
+  <section class="cards bg-primary" id="work">
     <div class="container pt-3">
-      <div class="row p-3 gap-4 gap-md-0 align-items-start justify-content-center">
-        <div class="col-11 col-md-10 col-lg-9 text-white mt-5">
+      <div class="row align-items-start justify-content-center">
+        <div class="col-11 col-md-9 col-lg-7 text-white mt-5">
           <h2 class="text-center">These are some of my projects</h2>
         </div>
-        <div class="col-11 mb-5 border-bottom border-3"></div>        
+        <div class="col-11 col-md-8 col-lg-6 mb-5 border-bottom border-3"></div> 
+      </div>
+      <div class="row p-3 gap-4 gap-md-0 align-items-start justify-content-center">               
         <div class="col-12 col-md-6 col-lg-4 mb-md-4">
           <div class="card border-0 shadow">
             <img src="./images/tribute.jpg" class="card-img-top" alt="...">
             <div class="card-body text-center">
               <a href="#" class="text-white text-decoration-none stretched-link fw-bold fs-5">
-                Tribute Page
+                <span class="spanLink">&lsaquo; </span>Tribute Page<span class="spanLink"> /&rsaquo;</span>
               </a>              
             </div>
           </div>
@@ -51,19 +53,19 @@
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card border-0 shadow">
             <img src="./images/random-quote-machine.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <a href="#" class="stretched-link text-decoration-none">
-                <h5 class="card-title text-center text-white">Random Quote Machine</h5>
-              </a>              
+            <div class="card-body text-center">
+              <a href="#" class="text-white text-decoration-none stretched-link fw-bold fs-5">
+                <span class="spanLink">&lsaquo; </span>Rnd Quote Machine<span class="spanLink"> /&rsaquo;</span>
+              </a>                        
             </div>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card border-0 shadow">
             <img src="./images/calc.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <a href="#" class="stretched-link text-decoration-none">
-                <h5 class="card-title text-center text-white">JavaScript Calculator</h5>
+            <div class="card-body text-center">
+              <a href="#" class="text-white text-decoration-none stretched-link fw-bold fs-5">
+                <span class="spanLink">&lsaquo; </span>JavaScript Calculator<span class="spanLink"> /&rsaquo;</span>
               </a>              
             </div>
           </div>
@@ -71,9 +73,9 @@
         <div class="col-12 col-md-6 col-lg-4 mb-md-4">
           <div class="card border-0 shadow">
             <img src="./images/map.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <a href="#" class="stretched-link text-decoration-none">
-                <h5 class="card-title text-center text-white">Map Data Across the Globe</h5>
+            <div class="card-body text-center">
+              <a href="#" class="text-white text-decoration-none stretched-link fw-bold fs-5">
+                <span class="spanLink">&lsaquo; </span>Data Across the Globe<span class="spanLink"> /&rsaquo;</span>
               </a>              
             </div>
           </div>
@@ -81,38 +83,64 @@
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card border-0 shadow">
             <img src="./images/wiki.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <a href="#" class="stretched-link text-decoration-none">
-                <h5 class="card-title text-center text-white">Wikipedia Viewer</h5>
-              </a>              
+            <div class="card-body text-center">
+              <a href="#" class="text-white text-decoration-none stretched-link fw-bold fs-5">
+                <span class="spanLink">&lsaquo; </span>Wikipedia Viewer<span class="spanLink"> /&rsaquo;</span>
+              </a>             
             </div>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card border-0 shadow">
             <img src="./images/tic-tac-toe.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <a href="#" class="stretched-link text-decoration-none">
-                <h5 class="card-title text-center text-white">Tic Tac Toe Game</h5>
-              </a>              
+            <div class="card-body text-center">
+              <a href="#" class="text-white text-decoration-none stretched-link fw-bold fs-5">
+                <span class="spanLink">&lsaquo; </span>Tic Tac Toe Game<span class="spanLink"> /&rsaquo;</span>
+              </a>             
             </div>
           </div>
         </div>
+        <a href="#" class="btn btn-secondary mt-5 mb-3 py-2 w-25 fw-bold">Show all &rsaquo;</a>
       </div>
     </div>
   </section>
 
- 
-  
+  <!--Work Together-->
+  <section class="lets-work-together" id="contact">
+    <div class="work-together text-white" style="height: 800px;">               
+        <h1 class="display-4 fw-bold mb-4">Let's work together...</h1>
+        <p class="fs-5 fw-bold fst-italic">How do you take your coffee?</p>         
+        <ul class="list-inline fs-3 p-3 mt-3">
+          <a href="#"><li class="list-inline-item text-white">Facebook</li></a>
+          <a href="#"><li class="list-inline-item text-white">GitHub</li></a>
+          <a href="#"><li class="list-inline-item text-white">Twitter</li></a>
+          <a href="#"><li class="list-inline-item text-white">Send a mail</li></a>
+          <a href="#"><li class="list-inline-item text-white">Call me</li></a>          
+        </ul>
+     </div>
+  </section>
 
+  <hr>
 
-
-
+  <footer class="footer">
+    <div class="container-fluid pt-3">
+      <div class="row p-2 text-white fw-bold text-center justify-content-center align-items-center">
+        <div class="col-12 col-xl-7">
+          <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+        </div>
+        <div class="col-12 col-xl-4">
+          <p>&copy; Created for freeCodeCamp</p>
+        </div>
+      </div>    
+    </div>
+  </footer>
 
     <!--Bootstrap script-->
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'
         integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p'
         crossorigin='anonymous'>
-    </script>    
+    </script>
+    
+    <script src="./script.js"></script>
 </body>
 </html>

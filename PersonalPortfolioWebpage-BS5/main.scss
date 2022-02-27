@@ -1,15 +1,18 @@
-
+$indigo-500:                        #6610f2;
+$secondary:                         $indigo-500;
 
 $nav-link-color:                    rgb(255,255,255);
 $nav-link-hover-color:              rgb(14, 100, 211);
 
 $box-shadow:                  0 .5rem 1rem rgba(black, .65);
 
+
 @import "./node_modules/bootstrap/scss/bootstrap";
 
 
-$card-title-hover:                  rgb(238, 255, 0);
 
+$card-title-hover:                  rgb(238, 255, 0);
+$button-show-all-background:        rgb(255, 0, 0);
 
 .home-section {    
     height: 100vh;
@@ -22,16 +25,56 @@ $card-title-hover:                  rgb(238, 255, 0);
     text-align: center;   
 }
 
-
-
 .card-body {
     > a:hover {
         color: $card-title-hover !important;
     }
-    background-color: $indigo-500;
+    background-color: $indigo-500;    
 }
 
 .card:hover {
     transform: scale(1.05);
     transition: all 0.5s ease-out;
+}
+
+.row > a:hover {
+    background-color: $button-show-all-background !important;
+    transition: all 1.5s ease-out;
+}
+
+.work-together {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $indigo-500;
+}
+
+.list-inline li:nth-child(n) {
+    margin-right: 1.5em;
+    font-weight: bold;
+}
+
+.list-inline > a li:hover { 
+    transition-duration: 0.5s;
+    transform: translateY(25%);
+    color: $card-title-hover !important;
+}
+
+footer div {
+    background-color: $indigo-500;
+}
+
+hr {
+    line-height: 2rem;
+    background-color: rgb(97, 11, 11);
+    padding: 0.5rem;
+    margin: 0;
+    border:brown;
+}
+
+.spanLink {
+    color: rgb(255, 0, 0);
+    opacity: 0;    
 }
