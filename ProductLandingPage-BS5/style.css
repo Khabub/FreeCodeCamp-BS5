@@ -10368,4 +10368,8 @@ footer {
   line-height: 0.5rem;
 }
 
+.navbar {
+  transition: top 0.4s;
+}
+
 /*# sourceMappingURL=style.css.map */

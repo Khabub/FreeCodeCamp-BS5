@@ -1,13 +1,12 @@
-
 $display-font-sizes:                (6: 1.1rem);
 $theme-colors:                      ("warning": rgb(255, 255, 0));
 
 @import "./node_modules/bootstrap/scss/bootstrap";
 
 
+// My variables
 $trombones-links:                   rgb(255, 165, 0);
 $tromb-line-height:                 0.5rem;
-
 
 ul {
     .nav-link {
@@ -26,4 +25,8 @@ section .btn-warning:hover {
 footer {
     background-color: rgb(235, 235, 235) !important;
     line-height: $tromb-line-height;
+}
+
+.navbar {    
+    transition: top 0.4s;
 }
