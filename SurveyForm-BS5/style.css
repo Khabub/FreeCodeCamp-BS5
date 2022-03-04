@@ -11118,5 +11118,38 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  background-color: #5d28be;
+}
+
+.surveyback {
+  background-color: #2a0769;
+}
+
+[class|=survey] {
+  position: absolute;
+  top: 0;
+}
+
+.survey-role {
+  position: absolute;
+  top: 35px;
+}
+
+.form-control-age {
+  background-position-x: 95% !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+@media (min-width: 420px) {
+  .survey-role {
+    position: absolute;
+    top: 0px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

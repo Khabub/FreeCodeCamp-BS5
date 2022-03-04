@@ -2,3 +2,44 @@
 
 @import "./node_modules/bootstrap/scss/bootstrap";
 
+$survey-background-color:                   rgb(93, 40, 190);
+$survey-back-color-dark:                   rgb(42, 7, 105);
+
+
+body {
+    background-color: $survey-background-color;
+}
+
+.surveyback {
+    background-color: $survey-back-color-dark;
+}
+
+[class|="survey"] {
+    position: absolute;
+    top: 0;    
+}
+
+.survey-role {
+    position: absolute;
+    top: 35px;
+}
+
+.form-control-age {
+    background-position-x: 95% !important;    
+}
+
+// Input arrows not hidden
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    opacity: 1;  
+}
+
+
+
+// If width is more than 420px, do it
+@media (min-width: 420px) {
+    .survey-role {
+        position: absolute;
+        top: 0px;
+    }
+}

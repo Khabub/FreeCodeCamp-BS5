@@ -8,6 +8,59 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="container mt-5">
+        <div class="text-center text-white">
+            <h1 class="fw-bold">freeCodeCamp Survey Form</h1>
+            <p class="fw-bold fst-italic py-2">Thank you for taking the time to help us improve the platform</p>
+        </div>
+        <div class="surveyback shadow rounded">
+            <form class="fs-5 text-white py-3 px-4 needs-validation" novalidate>
+                <div class="position-relative">
+                    <label for="name" id="name" class="form-label my-0">Name</label>
+                    <input type="text" class="form-control p-1 mb-2" id="name" placeholder="Enter your name" required>
+                    <div class="survey-name text-end fw-bold valid-feedback">OK!</div>
+                    <div class="survey-name text-end fw-bold invalid-feedback">Not good!</div>
+                </div>
+                <div class="position-relative">
+                    <label for="email" id="email" class="form-label my-0">Email</label>
+                    <input type="email" class="form-control p-1 mb-2" id="email" placeholder="Enter your email" required>
+                    <div class="survey-email text-end fw-bold valid-feedback">OK!</div>
+                    <div class="survey-email text-end fw-bold invalid-feedback">Not good!</div>
+                </div>
+                <div class="position-relative">
+                    <label for="age" id="age" class="form-label my-0">Age (optional)</label>
+                    <input type="number" class="form-control form-control-age p-1 mb-2" id="age" min="15" max="130" placeholder="Enter your age" required>
+                    <div class="survey-age text-end fw-bold valid-feedback">OK!</div>
+                    <div class="survey-age text-end fw-bold invalid-feedback">Not good!</div>
+                </div>
+                <div class="position-relative">
+                    <label for="role" id="role" class="form-label mb-0 mt-4">Which option best describes your current role?</label>
+                    <select class="form-select p-1 mb-2" id="role" aria-label="Default select example" required>
+                        <option value="" selected disabled>Select current role</option>
+                        <option value="1">Student</option>
+                        <option value="2">Full Time Job</option>
+                        <option value="3">Full Time Learner</option>
+                        <option value="4">Prefer not to say</option>
+                        <option value="5">Other</option>
+                      </select>
+                      <div class="survey-role text-end fw-bold valid-feedback mt-4">OK!</div>
+                      <div class="survey-role text-end fw-bold invalid-feedback mt-4">Not good!</div>
+                </div>
+
+
+
+
+
+
+
+
+                <button class="btn btn-success mt-5 w-100">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
 
 
 
