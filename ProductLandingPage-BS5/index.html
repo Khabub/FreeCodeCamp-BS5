@@ -7,18 +7,146 @@
     <title>Product Landing Page BS5</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body style="position: relative; top: 170px;">
 
+    <!--Navbar-->
+    <div class="container">
+        <nav class="navbar p-0 fixed-top navbar-light">
+            <div class="container p-3 flex-column bg-white">
+                <a class="navbar-brand" href="#navbar"><img src="./images/product-landing-page-logo.png" alt=""
+                height="32"></a>                   
+                <ul class="navbar-nav text-center fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#howitworks">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>       
+            </div>
+        </nav>  
+    </div>    
+
+    <!--Home-->
+    <section class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-auto">
+                <h1 class="display-6 fw-bold">Handcrafted, home-made masterpiece</h1>
+            </div>
+            <div class="col-10">
+                <form class="needs-validation" novalidate>
+                    <input type="email" class="form-control mb-2 px-2 py-0" placeholder="Enter your email address">
+                    <div class="valid-feedback text-end fw-bold">OK!</div>
+                    <div class="invalid-feedback text-end fw-bold">BAD!</div>
+                    <button class="btn btn-warning py-1 px-3 border border-2 border-dark fw-bold">GET STARTED</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Features-->
+    <section id="features">
+        <div class="container">
+            <div class="row mt-5 p-3 justify-content-center text-center">
+                <div class="col-12">
+                    <h1 class="display-6 fw-bold">Premium Materials</h1>
+                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                </div>
+                <div class="col-12 mt-3">
+                    <h1 class="display-6 fw-bold">Fast Shipping</h1>
+                    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                </div>
+                <div class="col-12 mt-3">
+                    <h1 class="display-6 fw-bold">Quality Assurance</h1>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--How It Works-->
+    <div class="container">
+        <div class="d-flex justify-content-center p-2" id="howitworks">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!--Pricing-->
+    <section class="pricing">
+        <div class="container">
+            <div class="row gap-3 mt-5 p-0 justify-content-center text-center">
+                <div class="col-8">
+                    <div class="card">
+                        <div class="card-header text-uppercase">Tenor Trombone</div>
+                        <div class="card-body">
+                        <h1 class="card-title my-4">$600</h1>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <button class="btn btn-warning my-3 py-1 px-3 fw-bold">SELECT</button>        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="card">
+                        <div class="card-header text-uppercase">Bass Trombone</div>
+                        <div class="card-body">
+                        <h1 class="card-title my-4">$900</h1>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <button class="btn btn-warning my-3 py-1 px-3 fw-bold">SELECT</button>        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="card">
+                        <div class="card-header text-uppercase">Valva Trombone</div>
+                        <div class="card-body">
+                        <h1 class="card-title my-4">$900</h1>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <button class="btn btn-warning my-3 py-1 px-3 fw-bold">SELECT</button>        
+                        </div>
+                    </div>
+                </div>                         
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="container mt-5 py-2 px-0">                   
+        <ul class="list-unstyled list-inline text-end pt-3 pb-1">                        
+            <a href="#"><li class="list-inline-item text-decoration-none text-black me-2">Privacy</li></a>                        
+            <a href="#"><li class="list-inline-item text-decoration-none text-black me-2">Terms</li></a>
+            <a href="#"><li class="list-inline-item text-decoration-none text-black me-3">Contact</li></a>
+        </ul>
+        <p class="text-end me-3 p-0">Copyright &copy; 2022, Original Trombones </p>
+    </footer>
     
-    
-
-
-
-
     <!--Bootstrap script-->
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'
         integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p'
         crossorigin='anonymous'>
     </script>    
+
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+    // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+    
 </body>
 </html>

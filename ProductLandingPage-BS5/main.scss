@@ -1,6 +1,29 @@
 
-
+$display-font-sizes:                (6: 1.1rem);
+$theme-colors:                      ("warning": rgb(255, 255, 0));
 
 @import "./node_modules/bootstrap/scss/bootstrap";
 
 
+$trombones-links:                   rgb(255, 165, 0);
+$tromb-line-height:                 0.5rem;
+
+
+ul {
+    .nav-link {
+        line-height: $tromb-line-height;
+    }
+    .nav-link:hover {
+        color: $trombones-links !important;
+    }
+}
+
+section .btn-warning:hover {
+    background-color: $trombones-links;
+    transition: all 1s ease-out;
+}
+
+footer {
+    background-color: rgb(235, 235, 235) !important;
+    line-height: $tromb-line-height;
+}

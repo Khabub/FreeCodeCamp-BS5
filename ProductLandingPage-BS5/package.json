@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "echo \"Kompiluji :)\" && sass main.scss style.css"
+    "compile": "echo \"Kompiluji :)\" && sass -w main.scss style.css"
   },
   "keywords": [],
   "author": "",
