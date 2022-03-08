@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container mt-5">
+    <div class="container mt-5 mb-3">
         <div class="text-center text-white">
             <h1 class="fw-bold">freeCodeCamp Survey Form</h1>
             <p class="fw-bold fst-italic py-2">Thank you for taking the time to help us improve the platform</p>
@@ -34,7 +34,7 @@
                     <div class="survey-age text-end fw-bold invalid-feedback">Not good!</div>
                 </div>
                 <div class="position-relative">
-                    <label for="role" id="role" class="form-label mb-0 mt-4">Which option best describes your current role?</label>
+                    <label for="role" id="role" class="sur-label-role form-label mb-0 mt-4">Which option best describes your current role?</label>
                     <select class="form-select p-1 mb-2" id="role" aria-label="Default select example" required>
                         <option value="" selected disabled>Select current role</option>
                         <option value="1">Student</option>
@@ -46,22 +46,92 @@
                       <div class="survey-role text-end fw-bold valid-feedback mt-4">OK!</div>
                       <div class="survey-role text-end fw-bold invalid-feedback mt-4">Not good!</div>
                 </div>
+                <div class="position-relative">
+                    <label class="sur-label-role form-label mt-4">Would you recommend freeCodeCamp to a friend?</label>
+                    <div class="form-check">                        
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>                        
+                        <label class="" for="flexRadioDefault1">Definitely</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="" for="flexRadioDefault2">Maybe</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="" for="flexRadioDefault2">Not Sure</label>
+                        <div class="survey-recommend text-end fw-bold valid-feedback mt-4">OK!</div>
+                      </div>                      
+                </div>
+                <div class="position-relative">
+                    <label for="role" id="role" class="sur-label-role form-label mb-0 mt-4">What is your favorite feature of freeCodeCamp?</label>
+                    <select class="form-select p-1 mb-2" id="role" aria-label="Default select example" required>
+                        <option value="" selected disabled>Select an option</option>
+                        <option value="1">Challenges</option>
+                        <option value="2">Projects</option>
+                        <option value="3">Community</option>
+                        <option value="4">Open source</option>                        
+                      </select>
+                      <div class="survey-role text-end fw-bold valid-feedback mt-4">OK!</div>
+                      <div class="survey-role text-end fw-bold invalid-feedback mt-4">Not good!</div>
+                </div>
+                <div class="position-relative">
+                    <label class="sur-label-role form-label mt-4">What would you like to see improved? (Check all that apply)</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="" for="flexCheckDefault">Front-end Projects</label>
+                        <div class="survey-recommend text-end fw-bold valid-feedback mt-4">OK!</div>                        
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1">
+                        <label class="" for="flexCheckChecked1">Back-end Projects</label>                        
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2">
+                        <label class="" for="flexCheckChecked2">Data Visualization</label>                        
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3">
+                        <label class="" for="flexCheckChecked3">Challenges</label>                        
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4">
+                        <label class="" for="flexCheckChecked4">Open Source Community</label>                        
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked5">
+                        <label class="" for="flexCheckChecked5">Gitter help rooms</label>                        
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked6">
+                        <label class="" for="flexCheckChecked6">Videos</label>                        
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked7">
+                        <label class="" for="flexCheckChecked7">City Meetups</label>                        
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked8">
+                        <label class="" for="flexCheckChecked8">Wiki</label>                        
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked9">
+                        <label class="" for="flexCheckChecked9">Forum</label>                        
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked10">
+                        <label class="" for="flexCheckChecked10">Additional Courses</label>                        
+                      </div>                      
+                </div>
+                <div class="position-relative">
+                    <label class="form-label mt-4">Any comments or suggestions?</label>                                           
+                    <textarea class="form-control p-2" id="floatingTextarea" placeholder="Leave a comment here"></textarea>                        
+                    <div class="survey-area text-end fw-bold valid-feedback mt-4">OK!</div>                     
+                </div>
 
-
-
-
-
-
-
-
-                <button class="btn btn-success mt-5 w-100">Submit</button>
+                <button class="btn btn-success mt-4 w-100">Submit</button>
             </form>
         </div>
     </div>
-
-
-
-
 
 
     <!--Bootstrap script-->

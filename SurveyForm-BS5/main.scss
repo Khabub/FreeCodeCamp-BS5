@@ -1,9 +1,8 @@
 
-
 @import "./node_modules/bootstrap/scss/bootstrap";
 
 $survey-background-color:                   rgb(93, 40, 190);
-$survey-back-color-dark:                   rgb(42, 7, 105);
+$survey-back-color-dark:                    rgb(42, 7, 105);
 
 
 body {
@@ -24,8 +23,25 @@ body {
     top: 35px;
 }
 
+.survey-recommend {
+    position: absolute;
+    top: 3px;
+    right: 0px;
+}
+
+.survey-area {
+    position: absolute;
+    top: 7px;
+    right: -17px;
+    font-size: 0.8rem;
+}
+
 .form-control-age {
     background-position-x: 95% !important;    
+}
+
+.sur-label-role {
+    width: 300px;
 }
 
 // Input arrows not hidden
@@ -34,12 +50,25 @@ input::-webkit-inner-spin-button {
     opacity: 1;  
 }
 
-
+#floatingTextarea {
+    height: 150px;
+}
 
 // If width is more than 420px, do it
 @media (min-width: 420px) {
     .survey-role {
         position: absolute;
         top: 0px;
+    }
+    .survey-area {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        font-size: 1.2rem;        
+    }
+}
+@media (min-width: 768px) {
+    .sur-label-role {
+        width: auto;
     }
 }

@@ -11136,8 +11136,25 @@ body {
   top: 35px;
 }
 
+.survey-recommend {
+  position: absolute;
+  top: 3px;
+  right: 0px;
+}
+
+.survey-area {
+  position: absolute;
+  top: 7px;
+  right: -17px;
+  font-size: 0.8rem;
+}
+
 .form-control-age {
   background-position-x: 95% !important;
+}
+
+.sur-label-role {
+  width: 300px;
 }
 
 input::-webkit-outer-spin-button,
@@ -11145,10 +11162,26 @@ input::-webkit-inner-spin-button {
   opacity: 1;
 }
 
+#floatingTextarea {
+  height: 150px;
+}
+
 @media (min-width: 420px) {
   .survey-role {
     position: absolute;
     top: 0px;
+  }
+
+  .survey-area {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 768px) {
+  .sur-label-role {
+    width: auto;
   }
 }
 
