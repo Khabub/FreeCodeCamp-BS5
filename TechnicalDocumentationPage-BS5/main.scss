@@ -2,6 +2,13 @@
 @import './node_modules/bootstrap/scss/bootstrap';
 
 
+html {
+    scroll-padding-top: 300px;
+}
+body {    
+    margin-top: 220px;
+}
+
 pre {
     background-color: rgb(238, 238, 238);
     padding: 1rem;    

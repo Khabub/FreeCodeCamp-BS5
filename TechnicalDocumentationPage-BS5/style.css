@@ -11118,6 +11118,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+html {
+  scroll-padding-top: 300px;
+}
+
+body {
+  margin-top: 220px;
+}
+
 pre {
   background-color: #eeeeee;
   padding: 1rem;
