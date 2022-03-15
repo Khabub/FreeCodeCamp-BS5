@@ -11,17 +11,19 @@ function myFunction(x){
         main.style.marginLeft = "350px";
         main.classList.remove("mt-5");
         body.style.marginTop = "0";
+     
         menu.style.height = "500px";
-        menu.style.overflowY = "initial";
+        menu.style.overflowY = "auto";
         htmMain.style.scrollPaddingTop = "0";
         robNav.classList.remove("bg-white");
-    }else{
+        }else{
         main.style.marginLeft = "0";
         main.classList.add("mt-5");
         body.style.marginTop = "220px";
+        
         menu.style.height = "220px";
         menu.style.overflowY = "scroll";
-        htmMain.style.scrollPaddingTop = "300px";
+        htmMain.style.scrollPaddingTop = "300px";        
         robNav.classList.add("bg-white");
     }
 }
