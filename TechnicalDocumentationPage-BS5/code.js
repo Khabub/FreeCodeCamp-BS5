@@ -28,7 +28,7 @@ function myFunction(x){
     }
 }
 
-let x = window.matchMedia("(min-width: 768px)");
+let x = window.matchMedia("(min-width: 576px)");
 
 
 x.addEventListener('change', myFunction)
