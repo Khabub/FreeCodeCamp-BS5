@@ -12,7 +12,7 @@ function myFunction(x){
         main.classList.remove("mt-5");
         body.style.marginTop = "0";
      
-        menu.style.height = "500px";
+        menu.style.height = "800px";
         menu.style.overflowY = "auto";
         htmMain.style.scrollPaddingTop = "0";
         robNav.classList.remove("bg-white");
@@ -28,7 +28,7 @@ function myFunction(x){
     }
 }
 
-let x = window.matchMedia("(min-width: 992px)");
+let x = window.matchMedia("(min-width: 768px)");
 
 
 x.addEventListener('change', myFunction)
